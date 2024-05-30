@@ -12,7 +12,7 @@ LIBRARY_PATHS = -LSDL2\lib
 
 #COMPILER_FLAGS - Additional compilation flags
 # -w suppresses all warnings
-# -Wl,-subsystem,windows gets rid of the console window
+# -Wl, -subsystem, windows gets rid of the console window
 COMPILER_FLAGS = -Wall -Werror -Wextra -pedantic
 
 #LINKER_FLAGS - Libraries we're linking with
@@ -20,7 +20,7 @@ LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2
 LINUX_LINKER_FLAGS = -lSDL2
 
 #OBJ_NAME - Name of our executable program
-OBJ_NAME = main
+OBJ_NAME = maze
 
 #This is the target that compiles our executable
 all : $(OBJS)
