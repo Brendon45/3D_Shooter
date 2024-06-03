@@ -21,13 +21,13 @@
 
 int init_instance(SDL_Instance *);
 
-
-level *build_world_from_args(int, char **);
+/* create_world.c */
+level *create_world_from_args(int number_of_levels, char **);
 
 
 void rotate(double_s *, double_s *, int);
-void movement(keys, double_s *, double_s *, double_s *, char **);
-
+void movement(keys key_press, double_s *plane, double_s *direction,
+											   double_s *play, char **map);
 
 void print_win(void);
 int check_win(double_s, int_s, int *);
