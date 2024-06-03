@@ -6,4 +6,3 @@ void free_map(char **, size_t);
 void close_SDL(SDL_Instance);
 
 #endif  /* MEMORY_H */
-
