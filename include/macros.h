@@ -8,4 +8,3 @@
 #define MAP_HEIGHT 24
 
 #endif  /* MACROS_H */
-
