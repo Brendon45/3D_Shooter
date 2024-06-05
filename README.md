@@ -1,6 +1,7 @@
 ![CODING](file:///C:/Users/User/Downloads/29322d28f50cde68cd537f0dbec2fc92d82c6ae7.jpg)
+
 # 3D_Shooter 🎮
-![SHOOTER](https://user-images.githubusercontent.com/88714347/171422634-8adc8811-2559-4ba1-967f-4caf909c3f22.gif)
+- ![SHOOTER](https://user-images.githubusercontent.com/88714347/171422634-8adc8811-2559-4ba1-967f-4caf909c3f22.gif)
 
 ## Table of Contents
 
