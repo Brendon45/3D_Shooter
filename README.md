@@ -49,12 +49,17 @@ $ sudo apt-get install libsdl2-dev
 
 Step 1: Clone the repository:
 
-    git clone https://github.com/Brendon45/3D_Shooter.git
+```
+git clone https://github.com/Brendon45/3D_Shooter.git
+```
 
 Step 2: Compile All .c Files
-To compile all .c files in the src directory and generate an executable file called maze, run the following command:
 
-    make all
+- To compile all .c files in the src directory and generate an executable file called maze, run the following command:
+
+```
+make all
+```
 
 Step 3: Run the Executable
 To play the game, run the executable with a specified map option. The available map options are level_1 to level_7, and demo_00 and demo_01.
