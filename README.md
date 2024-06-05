@@ -39,13 +39,15 @@
   - Mac OS X or Linux/Ubuntu
   - SDL2 Installation
 
-- If you don't have SDL2 installed, you can download the installation script [here](https://drive.google.com/file/d/1P7mISrn8QofKOYjQ09wASLEHCzghNHnQ/view?usp=sharing). After downloading, locate the script and run it in your terminal:
+- If you don't have SDL2 installed, you can download the installation script [here](https://drive.google.com/file/d/1P7mISrn8QofKOYjQ09wASLEHCzghNHnQ/view?usp=sharing).
 
 ```shell
 $ sudo apt-get install libsdl2-dev
 ```
 
 ## How to play the game
+
+After downloading, locate the script and run it in your terminal:
 
 Step 1: Clone the repository:
 
@@ -114,9 +116,8 @@ To play the game, you need to know these controls:
 
 ## AUTHORS✒️
 
-1. Brendon Jeje       [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/) | [Twitter](https://twitter.com/brendon4545)
-
-2. Tafara Nyamhunaga  [Github](https://github.com/Tafara-N) | [Linkedin](https://www.linkedin.com/in/tafaranyamhunga/) | [Twitter](https://twitter.com/tafaranyamhunga)
+- 1. Brendon Jeje       [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/) | [Twitter](https://twitter.com/brendon4545)
+- 2. Tafara Nyamhunga  [Github](https://github.com/Tafara-N) | [Linkedin](https://www.linkedin.com/in/tafaranyamhunga/) | [Twitter](https://twitter.com/tafaranyamhunga)
 
 ## License
 
