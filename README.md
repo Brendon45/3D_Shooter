@@ -87,7 +87,7 @@ To play the game, you need to know these controls:
 - `Up Arrow` Key / `T` Key: Move forward
 - `Down Arrow` Key / `G` Key: Move backward
 - `ESC Key` / `X Button`: Close window
-- F1 Key: Toggle between fullscreen and windowed mode
+- `F1 Key`: Toggle between fullscreen and windowed mode
 
 ## References
 
