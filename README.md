@@ -116,8 +116,9 @@ To play the game, you need to know these controls:
 
 ## AUTHORS✒️
 
-- 1. Brendon Jeje       [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/) | [Twitter](https://twitter.com/brendon4545)
-- 2. Tafara Nyamhunga  [Github](https://github.com/Tafara-N) | [Linkedin](https://www.linkedin.com/in/tafaranyamhunga/) | [Twitter](https://twitter.com/tafaranyamhunga)
+1. Brendon Jeje       [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/) | [Twitter](https://twitter.com/brendon4545)
+
+2. Tafara Nyamhunga  [Github](https://github.com/Tafara-N) | [Linkedin](https://www.linkedin.com/in/tafaranyamhunga/) | [Twitter](https://twitter.com/tafaranyamhunga)
 
 ## License
 
