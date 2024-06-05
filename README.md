@@ -62,17 +62,21 @@ make all
 ```
 
 Step 3: Run the Executable
-To play the game, run the executable with a specified map option. The available map options are level_1 to level_7, and demo_00 and demo_01.
+
+- To play the game, run the executable with a specified map option.
+	- The available map options are `level_1` to `level_7`, and:
+		- These are for demonstration:
+			- `demo_00 and demo_01`.
 
 Example Commands:
 
 To play the first level, use:
 
-    ./maze maps/level_1
+`./maze maps/level_1`
 
 To play the first demo, use:
 
-    ./maze maps/demo_00
+`./maze maps/demo_00`
 
 ## Controls
 
