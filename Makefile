@@ -1,40 +1,34 @@
-#OBJS - Files to compile
-OBJS = src/*.c
-
-#CC - Compiler
+# Compiler.
 CC = gcc
 
-#INCLUDE_PATHS - Additional include paths
-INCLUDE_PATHS = -ISDL2\include\SDL2
+# Source files (names).
+SRC = src/*.c
 
-#LIBRARY_PATHS - Additional library paths
-LIBRARY_PATHS = -LSDL2\lib
+# Object files (names same as source files).
+OBJ = $(SRC:.c=.o)
 
-#COMPILER_FLAGS - Additional compilation flags
-# -w suppresses all warnings
-# -Wl, -subsystem, windows gets rid of the console window
-COMPILER_FLAGS = -Wall -Werror -Wextra -pedantic
+# Name of executable file.
+NAME = maze
 
-#LINKER_FLAGS - Libraries we're linking with
-LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2
-LINUX_LINKER_FLAGS = -lSDL2
+# Remove files.
+RM = rm -f
 
-#OBJ_NAME - Name of our executable program
-OBJ_NAME = maze
+# Compiler flags.
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-#This is the target that compiles our executable
-all : $(OBJS)
-	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+# Linker flags.
+LFLAGS = -lSDL2 -lSDL2_image -lm
 
-#Linux SDL compiling
-linux : $(OBJS)
-	$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINUX_LINKER_FLAGS) -DLINUX -o $(OBJ_NAME)
-
-#Linux SDL installation
-linux_install :
-	sudo apt-get install libsdl2-dev
-
-#MAC SDL compiling
-mac : $(OBJS)
-	$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINUX_LINKER_FLAGS) -DMAC -o $(OBJ_NAME)
-
+# Compilation of executable.
+all: $(SRC)
+	$(CC) $(SRC) $(CFLAGS) $(LFLAGS) -o $(NAME)
+# Remove temporary files and executable.
+clean:
+	$(RM) *~ $(NAME)
+# Remove object files.
+oclean:
+	$(RM) $(OBJ)
+# Remove temp, object, and executable files.
+fclean: clean oclean
+# Remove all created files and re-compile all.
+re: oclean all
