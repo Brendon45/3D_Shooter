@@ -40,13 +40,10 @@
   - SDL2 Installation
 
 - If you don't have SDL2 installed, you can download the installation script [here](https://drive.google.com/file/d/1P7mISrn8QofKOYjQ09wASLEHCzghNHnQ/view?usp=sharing). After downloading, locate the script and run it in your terminal:
-  
-      $ ls
-      install_SDL2.sh
-      $ chmod 755 install_SDL2.sh
-      $ sudo ./install_SDL2.sh
-or Run:
-      $ sudo apt-get install libsdl2-dev
+
+```shell
+$ sudo apt-get install libsdl2-dev
+```
 
 ## How to play the game
 
@@ -58,7 +55,7 @@ Step 2: Compile All .c Files
 To compile all .c files in the src directory and generate an executable file called maze, run the following command:
 
     make all
-    
+
 Step 3: Run the Executable
 To play the game, run the executable with a specified map option. The available map options are level_1 to level_7, and demo_00 and demo_01.
 
@@ -96,12 +93,12 @@ To play the game, you need to know these controls:
 
                                    🚧This project is still a work in progress!
 📍There are still many elements that are under development and we wish to implement them into our 3D_Shooter project.
-                               Stay tuned for more updates coming soon. 🍿📺🍿 
+                               Stay tuned for more updates coming soon. 🍿📺🍿
 
 - Additional Levels: Plan to introduce more complex and challenging maze levels.
 
 - Enhanced Graphics: Explore advanced graphical techniques to further improve the visual appeal
-  
+
 - Improve Game Experience: By adding other elements such as sprites, enemies, weapons, rain, water, lava, etc. We can improve the difficulty and overall experience with the game.
 
 - Expanded Compatibility: Aim to extend compatibility to more platforms, including Windows.
@@ -115,8 +112,3 @@ To play the game, you need to know these controls:
 ## License
 
 - This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
-
-
-
-
-
