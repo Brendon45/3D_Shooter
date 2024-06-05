@@ -1,19 +1,18 @@
-![CODING](https://github.com/elyse502/AirBnB_clone/assets/125453474/ab3c1e01-2b98-47ae-96b7-37c07c85a2f1)
-# 3D_Shooter
+![CODING]()
+# 3D_Shooter 🎮
 ![SHOOTER](https://user-images.githubusercontent.com/88714347/171422634-8adc8811-2559-4ba1-967f-4caf909c3f22.gif)
-
 
 ## Table of Contents
 
-    - [Background Context](#background-context)
-    - [Environment](#environment)
-    - [Installation](#installation)
-    - [How to play the game](#how-to-play-the-game)
-    - [Controls](#controls)
-    - [References](#references)
-    - [Future Enhancements](#future-enhancements)
-    - [Authors](#authors)
-    - [License](#license)
+- [Background Context](#background-context)
+- [Environment](#environment)
+- [Installation](#installation)
+- [How to play the game](#how-to-play-the-game)
+- [Controls](#controls)
+- [References](#references)
+- [Future Enhancements](#future-enhancements)
+- [Authors](#authors)
+- [License](#license)
 
 # Background Context
 
@@ -49,21 +48,37 @@
 
 ## How to play the game
 
-- First step is to clone the repo:
+Step 1: Clone the repository:
 
-git clone https://github.com/Brendon45/3D_Shooter.git
+    git clone https://github.com/Brendon45/3D_Shooter.git
 
-- Compile all .c files in the src directory:
+Step 2: Compile All .c Files
+To compile all .c files in the src directory and generate an executable file called maze, run the following command:
+
+    make all
+    
+Step 3: Run the Executable
+To play the game, run the executable with a specified map option. The available map options are level_1 to level_7, and demo_00 and demo_01.
+
+Example Commands:
+
+To play the first level, use:
+
+    ./maze maps/level_1
+
+To play the first demo, use:
+
+    ./maze maps/demo_00
 
 ## Controls
 
 ## References
 
-    - [lodev.org](#lodev.org)
-    - [cplusplus.com](#cplusplus.com)
-    - [pikuma.com](#pikum.com)
-    - [3DSage/OpenGL-Raycaster](#3DSage/OpenGL-Raycaster)
-    - [permadi.com](#permadi.com)
+- [lodev.org](#lodev.org)
+- [cplusplus.com](#cplusplus.com)
+- [pikuma.com](#pikum.com)
+- [3DSage/OpenGL-Raycaster](#3DSage/OpenGL-Raycaster)
+- [permadi.com](#permadi.com)
 
 ## Future Enhancements
 
@@ -78,9 +93,9 @@ git clone https://github.com/Brendon45/3D_Shooter.git
 
 ## AUTHORS
 
-Brendon Jeje [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/)
+1. Brendon Jeje  [Github](https://github.com/Brendon45) | [Linkedin](https://www.linkedin.com/in/brendonjeje/) | [Twitter](https://twitter.com/brendon4545)
 
-Tafara Nyamhunaga ([Github](https://github.com/Tafara-N)) | ([Linkedin](https://www.linkedin.com/in/tafaranyamhunga/))
+2. Tafara Nyamhunaga  [Github](https://github.com/Tafara-N) | [Linkedin](https://www.linkedin.com/in/tafaranyamhunga/) | [Twitter](https://twitter.com/tafaranyamhunga)
 
 ## License
 
