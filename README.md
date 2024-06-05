@@ -85,7 +85,7 @@ To play the game, you need to know these controls:
 - Left Arrow Key / `F` Key: Rotate camera to the left
 - Right Arrow Key / `H` Key: Rotate camera to the right
 - `Up Arrow` Key / `T` Key: Move forward
-- Down Arrow Key / `G` Key: Move backward
+- `Down Arrow` Key / `G` Key: Move backward
 - `ESC Key` / `X Button`: Close window
 - F1 Key: Toggle between fullscreen and windowed mode
 
