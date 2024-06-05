@@ -47,19 +47,19 @@ $ sudo apt-get install libsdl2-dev
 
 ## How to play the game
 
-After downloading, locate the script and run it in your terminal:
-
 Step 1: Clone the repository:
 
 ```
 git clone https://github.com/Brendon45/3D_Shooter.git
 ```
+After downloading, locate the script and run it in your terminal:
 
 Step 2: Compile All .c Files
 
 - To compile all .c files in the src directory and generate an executable file called maze, run the following command:
 
 ```
+cd 3D_Shooter
 make all
 ```
 
