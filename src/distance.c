@@ -79,4 +79,3 @@ double distance_from_wall(char **map, double_s *dist_side, int_s *coordinate,
 		wall_distance = (coordinate->y - ray_position->y + (1 - step->y) / 2) / ray_direction->y;
 	return (wall_distance);
 }
-
