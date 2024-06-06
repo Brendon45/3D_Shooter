@@ -4,8 +4,8 @@
  * raycast_direction - Direction is the ray being casted
  * @step: Direction to move
  * @dist_side: Distance to next square on the grid
- * @raycast_position: Start position of the ray being cast
- * @coordinates: Coordinates on the grid
+ * @ray_position: Start position of the ray being cast
+ * @coordinate: Coordinates on the grid
  * @dist_del: Difference in distance between two sides of a grid
  * @ray_direction: Ray's vector direction
  */
@@ -39,12 +39,12 @@ void raycast_direction(int_s *step, double_s *dist_side, double_s ray_position,
  * distance_from_wall - Distance from the player to the wall
  * @map: 2D Array representing the map of the maze
  * @dist_side: x and y values of the distance to the next side of the map grid
- * @coordinates: x and y coordinates of the player in the map
+ * @coordinate: x and y coordinates of the player in the map
  * @step: direction player will move in on the x/y axes
  * @dist_del: The x/y change between two sides of the map grid
  * @hit_side: Hit North/South vs East/West wall
  * @ray_direction: Direction of the ray vector from the player
- * @raycast_position: X/Y coordinates of the ray
+ * @ray_position: X/Y coordinates of the ray
  *
  * Return: Distance from player to the wall
  */
