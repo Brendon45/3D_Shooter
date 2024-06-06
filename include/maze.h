@@ -133,6 +133,5 @@ void free_memory(SDL_Instance, char **, size_t);
 void free_map(char **, size_t);
 void close_SDL(SDL_Instance);
 
-/* coming soon better textures */
 
 #endif  /* MAZE_H */
