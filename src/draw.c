@@ -10,10 +10,10 @@
  */
 
 void draw(SDL_Instance instance, char **map, double_s play,
-		  double_s dir, double_s plane)
+		  double_s direction, double_s plane)
 {
 	draw_background(instance);
-	draw_walls(map, play, instance, dir, plane);
+	draw_walls(map, play, instance, direction, plane);
 	SDL_RenderPresent(instance.renderer);
 }
 
