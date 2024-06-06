@@ -1,7 +1,7 @@
 #ifndef MAZE_H
 #define MAZE_H
 
-/* libraries */
+/* Libraries */
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <math.h>
@@ -89,7 +89,6 @@ typedef struct level
 	double_s dir;
 	double_s plane;
 } level;
-
 
 
 /*------------------        FUNCTIONS            ----------------------------*/
