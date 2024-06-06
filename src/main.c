@@ -1,35 +1,66 @@
-#include <SDL2/SDL.h>
+#include "../include/maze.h"
 
 /**
- * main - Entry point
- * @argc: Number of arguments passed to the program
- * @argv: Pointer to string arguments passed to the program
+ * main - Maze Game
+ * @argc: Number of arguments
+ * @argv: Arguments passed to the program
  *
- * Return: On success (0),
- *			else failure status if failed.
+ * Return: On success - (0),
+ *			otherwise - (1)
  */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	/* Drawing the window */
-	SDL_Window *window = NULL;
-	SDL_Renderer *renderer = NULL;
+	SDL_Instance instance;
+	level *levels;
+	int lvl, win_value, num_of_levels;
 
-	/* Initialize SDL, width and height */
-	SDL_Init(SDL_INIT_VIDEO);
-	SDL_CreateWindowAndRenderer(640 * 4, 480 * 4, 0, &window, &renderer);
-	SDL_RenderSetScale(renderer, 4, 4);
+	/* Initialize all values to 0 */
+	keys key_press = {0, 0, 0, 0};
 
-	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-	SDL_RenderClear(renderer);
+	lvl = win_value = 0;
 
-	/* Drawing on the window and centering it */
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-	SDL_RenderDrawPoint(renderer, 640/2, 480/2);
+	/* argc = levels included when running game */
+	num_of_levels = argc;
 
-	/* Make sure the window doesn't close immediately */
-	SDL_RenderPresent(renderer);
-	SDL_Delay(10000);
+	if (num_of_levels < 2)
+		return (1);
 
+	/* Generating a map from levels entered */
+	levels = create_world_from_args(argc, argv);
+
+	if (levels == NULL)
+		return (1);
+
+	/* Initialize SDL2, Window & renderer */
+	if (initialize(&instance) != 0)
+		return (1);
+
+	lvl = 0;
+	while (1)
+	{
+		if (keyboard_events(&key_press))  /* Pass key_press instance */
+		{
+			free_memory(instance, levels[lvl].map, levels[lvl].height);
+			break;
+		}
+		movement(key_press, &levels[lvl].plane, &levels[lvl].dir, &levels[lvl].play,
+			 levels[lvl].map);
+		if (winning(levels[lvl].play, levels[lvl].win, &win_value))
+		{
+			free_map(levels[lvl].map, levels[lvl].height);
+			lvl++;
+			if (lvl == argc - 1)
+				break;
+			win_value = 0;
+		}
+		draw(instance, levels[lvl].map, levels[lvl].play, levels[lvl].dir,
+		     levels[lvl].plane);
+	}
+	free_memory(instance, levels[lvl].map, levels[lvl].height);
+
+	/* close_SDL(instance); */
+	if (win_value)
+		you_won();
 	return (0);
 }
