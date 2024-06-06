@@ -12,12 +12,7 @@
 #include <ctype.h>
 
 /* Include headers */
-#include "create_maze.h"
-#include "draw.h"
-#include "events.h"
 #include "macros.h"
-#include "memory.h"
-#include "structures.h"
 
 int init_instance(SDL_Instance *);
 
