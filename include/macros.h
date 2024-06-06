@@ -2,8 +2,8 @@
 #define MACROS_H
 
 /* Screen */
-#define SCREEN_HEIGHT 768
-#define SCREEN_WIDTH 1024
+#define SCREEN_HEIGHT 600
+#define SCREEN_WIDTH 800
 
 /* Map */
 #define MAP_WIDTH 24
@@ -13,12 +13,11 @@
 #define TRUE 1
 #define FALSE 0
 
-/* Colors */
-#define RENDER_COLOR_WHITE(x) SDL_SetRenderDrawColor(x, 255, 255, 255, 255)
-#define RENDER_COLOR_BLACK(x) SDL_SetRenderDrawColor(x, 0, 0, 0, 255)
-#define RENDER_COLOR_YELLOW(x) SDL_SetRenderDrawColor(x, 255, 255, 0, 255)
-#define RENDER_COLOR_GREEN(x) SDL_SetRenderDrawColor(x, 0, 255, 0, 255)
-#define RENDER_COLOR_BLUE(x) SDL_SetRenderDrawColor(x, 0, 0, 255, 255)
-#define RENDER_COLOR(x, r, g, b, a) SDL_SetRenderDrawColor(x, r, g, b, a)
+/* Colors: draw.c */
+#define SKY_COLOR_BLUE(instance) SDL_SetRenderDrawColor(instance.renderer, 0, 0, 0x88, 0xFF);
+#define FLOOR_COLOR_GRAY(instance) SDL_SetRenderDrawColor(instance.renderer, 0x88, 0x88, 0x88, 0xFF);
 
-#endif  /* MACROS_H */
+	/* Wall color options */
+#
+
+#endif /* MACROS_H */
