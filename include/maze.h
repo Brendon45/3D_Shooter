@@ -91,47 +91,81 @@ typedef struct level
 } level;
 
 
-/* init_instance.c */
-int initialize(SDL_Instance *);
 
-/* event_handlers.c */
-int keyboard_events(keys *);
-void key_release_events(SDL_Event, keys *);
-int key_press_events(SDL_Event, keys *);
+/*------------------        FUNCTIONS            ----------------------------*/
 
-/* maze_creation.c */
+
+/* creat_maze.c */
 char **create_map(char *, double_s *, int_s *, size_t *);
 void plot_grid_points(char **, double_s *, int_s *, size_t, size_t, char *,
-		      int *);
+																	int *);
 size_t line_count(char *);
 size_t character_count(char *);
 
-/* world_creation.c */
+/*-----------------------------------------------------------------------------*/
+
+/* create_world.c */
 level *create_world_from_args(int, char **);
 
-/* draw_stuff.c */
+/*-----------------------------------------------------------------------------*/
+
+/* distance.c */
+double distance_from_wall(char **, double_s *, int_s *, int_s *, double_s *,
+												int *, double_s *, double_s *);
+void raycast_direction(int_s *, double_s *, double_s, int_s, double_s, double_s);
+
+/*-----------------------------------------------------------------------------*/
+
+/* draw.c */
 void draw(SDL_Instance, char **, double_s, double_s, double_s);
 void draw_walls(char **, double_s, SDL_Instance, double_s, double_s);
 void choose_color(SDL_Instance, char **, int_s, int);
 void draw_background(SDL_Instance);
 
-/* movement.c */
-void rotate(double_s *, double_s *, int);
-void movement(keys, double_s *, double_s *, double_s *, char **);
+/*-----------------------------------------------------------------------------*/
 
-/* func_win.c */
-void you_won(void);
-int winning(double_s, int_s, int *);
+/* events.c */
+int keyboard_events(keys *);
+void key_release_events(SDL_Event, keys *);
+int key_press_events(SDL_Event, keys *);
 
-/* dist_checks.c */
-double distance_from_wall(char **, double_s *, int_s *, int_s *, double_s *, int *,
-		     double_s *, double_s *);
-void raycast_direction(int_s *, double_s *, double_s, int_s, double_s, double_s);
+/*-----------------------------------------------------------------------------*/
 
-/* free_mem.c */
+/* memory.c */
 void free_memory(SDL_Instance, char **, size_t);
 void free_map(char **, size_t);
 void close_SDL(SDL_Instance);
 
+/*-----------------------------------------------------------------------------*/
+
+/* initialization.c */
+int initialize(SDL_Instance *);
+
+/*-----------------------------------------------------------------------------*/
+
+/* movement.c */
+void rotate(double_s *, double_s *, int);
+void movement(keys, double_s *, double_s *, double_s *, char **);
+
+/*-----------------------------------------------------------------------------*/
+
+/* winning.c */
+void you_won(void);
+int winning(double_s, int_s, int *);
+
+
+/**
+ * More improvments to be added:
+ * =============================
+ *
+ * score
+ * health bar
+ * enemies
+ * shooting
+ * power ups
+ * secret doors, paths, keys, etc
+ * nicer textures
+ * make it rain!!!
+ */
 
 #endif  /* MAZE_H */
