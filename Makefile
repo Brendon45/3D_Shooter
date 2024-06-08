@@ -21,14 +21,18 @@ LFLAGS = -lSDL2 -lSDL2_image -lm
 
 # Compilation of executable.
 all: $(SRC)
-	$(CC) $(SRC) $(CFLAGS) $(LFLAGS) -o $(NAME)
+	@$(CC) $(SRC) $(CFLAGS) $(LFLAGS) -o $(NAME)
+
 # Remove temporary files and executable.
 clean:
 	$(RM) *~ $(NAME)
+
 # Remove object files.
 oclean:
 	$(RM) $(OBJ)
+
 # Remove temp, object, and executable files.
 fclean: clean oclean
+
 # Remove all created files and re-compile all.
 re: oclean all
