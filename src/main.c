@@ -1,4 +1,5 @@
 #include "../include/maze.h"
+void juryt(void);
 
 /**
  * main - Maze Game
