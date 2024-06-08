@@ -26,7 +26,7 @@ void you_won(void)
  * @win_value: If the player has found the win space or not
  *
  * Return: If player found win space - (1),
- * 			otherwise - (0)
+ * otherwise - (0)
  */
 
 int winning(double_s play, int_s win, int *win_value)
